@@ -6,12 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/kubernetes/examples
-    targetRevision: master
-    path: staging/nginx
+    repoURL: https://github.com/NaumanMunir9/Nginx-App-Deploy-on-Local-Kubernetes-Cluster--KinD--with-ArgoCD.git
+    path: app/
   destination:
     server: https://kubernetes.default.svc
-    namespace: nginx
+    namespace: argo-nginx
   syncPolicy:
     automated:
       prune: true
